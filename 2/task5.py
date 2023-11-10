@@ -40,11 +40,8 @@ for item in dataset:
     count(item, "type", types)
     count(item["actor"], "id", ids)     
     count(item["actor"], "login", logins)
-
     count(item, "public", publics)
     count(item["repo"], "name", names)
-    # if ("description" in item["payload"]):
-    #     descriptions.append(len(item["payload"]["description"]))
     count(item["payload"], "size", sizes) 
 
     if "description" in item["payload"]:
